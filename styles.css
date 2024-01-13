@@ -1,0 +1,132 @@
+/* importing fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+
+/* common styles (this styles are commonly used in several contents) */
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+.division{
+    margin-top: 4.3rem;
+}
+.x-large-font{
+    font-size: 4rem;
+}
+.large-font{
+    font-size: 	2.8125rem;
+}
+.normal-font{
+    font-size: 1rem;
+}
+.bold{
+    font-weight: 700;
+}
+.semibold{
+    font-weight: 600;
+}
+.slightbold{
+    font-weight: 500;
+}
+.centered-text{
+    text-align: center;
+}
+
+.theme-button{
+    font-size: 1.25rem;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #FF900E;
+    color: white;
+    font-weight: 600;
+    width: 200px;
+    height: 64px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin: 5vh auto 5vh auto;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+
+
+/* Other styles */
+
+/* header styles */
+header{
+    background-color: rgba(255, 144, 14, 0.10);
+    width:  100%;
+    height: max-content;
+}
+.container{
+    background-color: rgba(255, 144, 14, 0.10);
+    padding: 3rem 15rem;
+}
+#G3{
+    color: #131313;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.navigate{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.navigate a{
+    text-decoration: none;
+    color: #424242;
+    margin-right: 2rem;
+}
+.banner{
+    width: 50vw;
+    height: 30vh;
+    text-align: center;
+    margin: 0px auto;
+}
+
+
+.banner-image img{
+    width: 100%;
+    margin-top: 15vh;
+}
+
+
+
+
+/* Responsive media query for small screens */
+@media screen and (max-width: 576px) {
+    .container{
+        margin: 1px;
+        padding: 0px;
+    }
+    nav{
+    flex-direction: column;
+    } 
+    .navigate{
+        margin-top: 2rem;
+    }  
+    .x-large-font{
+        font-size: 3.3rem;
+    }
+    .large-font{
+        font-size: 	2.8125rem;
+    }
+}
+
+
+/* Responsive media query for medium devices */
+@media screen and (min-width: 577px) and (max-width: 960px){
+    .container{
+        margin: 1rem 3rem;
+        padding: 0rem;
+        width: 100%;
+    }
+    nav{
+    flex-direction: column;
+    } 
+    .navigate{
+        margin-top: 2rem;
+    }
+}
