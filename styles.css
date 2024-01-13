@@ -88,7 +88,7 @@ nav{
 
 
 .banner-image img{
-    width: 100%;
+    max-width: 880px;
     padding-top: 4rem;
     margin-top: 15vh;
 }
@@ -98,7 +98,7 @@ nav{
 
 main{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 0 8rem;
 }
 .grid-container{
     width: auto;
@@ -107,7 +107,7 @@ main{
     gap: 1.5rem;
 }
 .grid-container img{
-    width: auto;
+    width: 18rem;
 }
 .flex-container{
     width: auto;
@@ -122,7 +122,7 @@ main{
 }
 .feacher-list{
     margin: auto auto auto 4.25rem;
-    width: 31rem;
+    max-width: 31rem;
 }
 
 
@@ -144,6 +144,15 @@ main{
     .large-font{
         font-size: 	2.8125rem;
     }
+    .flex-container{
+        flex-direction: column;
+    }
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+    .feacher-list{
+        margin: 1rem .5rem;
+    }
 }
 
 
@@ -159,5 +168,14 @@ main{
     } 
     .navigate{
         margin-top: 2rem;
+    }
+    .flex-container{
+        flex-direction: column-reverse;
+    }
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .feacher-list{
+        margin: 1rem .5rem;
     }
 }
