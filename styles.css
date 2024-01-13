@@ -52,12 +52,12 @@ body{
 
 /* header styles */
 header{
-    background-color: rgba(255, 144, 14, 0.10);
+    background-color: rgba(255, 143, 14, 0.308);
     width:  100%;
     height: max-content;
 }
 .container{
-    background-color: rgba(255, 144, 14, 0.10);
+    /* background-color: rgba(255, 144, 14, 0.10); */
     padding: 3rem 15rem;
 }
 #G3{
@@ -89,10 +89,41 @@ nav{
 
 .banner-image img{
     width: 100%;
+    padding-top: 4rem;
     margin-top: 15vh;
 }
 
 
+/* main styles */
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.grid-container{
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.grid-container img{
+    width: auto;
+}
+.flex-container{
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+#grey-letter{
+    color: #727272;
+}
+#yellow-letter{
+    color: #FF900E;
+}
+.feacher-list{
+    margin: auto auto auto 4.25rem;
+    width: 31rem;
+}
 
 
 /* Responsive media query for small screens */
